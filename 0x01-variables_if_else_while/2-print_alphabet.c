@@ -3,7 +3,8 @@
 int main(void)
 {
     char c = 'a';
-    while (c <= 'z') {
+    while (c <= 'z') 
+    {
         putchar(c);
         c++;
     }
