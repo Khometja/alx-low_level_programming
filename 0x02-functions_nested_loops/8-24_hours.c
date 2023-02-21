@@ -1,20 +1,24 @@
 #include "main.h"
 
 /**
- * print_last_digit - print last digit of a num
+ * jack_bauer - prints every minuite of the day
  *
- * @n: The integer to be used
- *
- * Return: The last digit of int
+ * Return: Always 0
  */
-int print_last_digit(int b)
+void jack_bauer(void)
 {
-	int t = b % 10;
+	int i, j;
 
-	if (t < 0)
-		t *= -1;
-
-	_putchar(t + '0');
-
-	return (t);
+	for (i = 0; i <= 23; i++)
+	{
+		for (j = 0; j <= 59; j++)
+		{
+			_putchar(i / 10 + '0');
+			_putchar(i % 10 + '0');
+			_putchar(':');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_putchar('\n');
+		}
+	}
 }
