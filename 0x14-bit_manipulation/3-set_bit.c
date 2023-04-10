@@ -5,7 +5,7 @@
  * set_bit - sets the value of a bit to 1 at a given index
  * @n: parameter
  * @index: index
- * Return: value 1 if it works and value -1 if it doesnt
+ * Return: 1 if it works & -1 if it doesnt
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
@@ -13,4 +13,4 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	*n |= (1 << index);
 	return (1);
-
+}
