@@ -1,2 +1,1 @@
-#!/bin/bash
-echo we doing C
+fucntion and pointers readme file
